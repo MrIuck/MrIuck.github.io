@@ -1,0 +1,52 @@
+h1 {
+    color : wheat;
+    text-align: center;
+}
+
+h2 {
+    color : wheat;
+    text-align: center;
+}
+
+h3 {
+    color : wheat;
+    text-align: left;
+}
+
+body {
+    background-color : black;
+    color : whitesmoke;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 50px auto;
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: circle 5s linear infinite;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url('ivan.jpg');
+    background-size: cover;
+    transform-origin: center center;
+}
+
+@keyframes circle {
+    0% {transform: rotate(0deg) translateX(50px) rotate(0deg);}
+    100% {transform: rotate(360deg) translateX(50px) rotate(-360deg);}
+}
